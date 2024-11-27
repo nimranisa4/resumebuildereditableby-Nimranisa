@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume builder</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>Editable resume builder by Nimra Nisa</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">name:</label>
+            <input type="text"id="name"name="name"required></br>
+
+            <label for="email">email</label>
+            <input type="text"id="email"name="email"required></br>
+            <label for="phone">Mobile phone Number</label>
+            <input type="tel"id="phone"name="phone"required></br>
+      
+            <label for="Address">address</label>
+            <input type="text"id="Address"name="Address"required></br>
+      
+            <label for="profilePicture">Profile picture</label>
+            <input type="file"id="profilePicture"name="profilePicture"accept="image/*" required>
+      
+        </fieldset>
+
+        <fieldset>
+        <legend>Experience:</legend>
+        <label for="experience">experience:</label>
+        <TextArea type="experience"id="experience"rows="7"required></TextArea></br>
+
+        <legend>Education</legend>
+        <label for="education">education:</label>
+        <TextArea type="education"id="education"rows="7"required></TextArea></br>
+        
+        <legend>skills</legend>
+        <label for="skills">skills:</label>
+        <TextArea type="skills"id="skills"rows="7"required></TextArea></br>
+        
+        </fieldset>
+        
+            <button type="submit">Generate Resume Below</button>
+        </fieldset>
+    </form>
+    <div id="resumeOutput"></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
